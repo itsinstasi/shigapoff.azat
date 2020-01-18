@@ -68,7 +68,7 @@
 						<div class="header__title">Азат Шигапов</div>
 					</div>
 					<div id="settingsContainer" class="header__right" style="display:none">
-						<button onclick="window.open('http://itsinsta.site/page.html?project=shigapoff.azat');" class="btn stories-popup__buy">Настроить</button>
+						<button onclick="window.open('http://itsinsta.site/page.html?project=shigapoff.azat', '_self');" class="btn stories-popup__buy">Настроить</button>
 					</div>
 				</div>
 			</div>
@@ -252,7 +252,7 @@ color: #FFFFFF;
 
 
 						<div class="links-page-btn-pic">
-							<center><img src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-15/fr/e15/p1080x1080/82851089_453784292167241_8125200674380531175_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105&_nc_ohc=gJVg_BVExRMAX9BE75_&oh=56ec5b68ea17e2ba3f2529afb7054bdc&oe=5E233CEC" alt="">
+							<center><img src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-15/fr/e15/p1080x1080/82851089_453784292167241_8125200674380531175_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105&_nc_ohc=NsPbu--uf-wAX9xM6dI&oh=c01ac9ba6caeafe976f65059a48ba107&oe=5E248E6C" alt="">
 							</img></center>
 						</div>
 
@@ -329,7 +329,7 @@ var getUrlParameter = function getUrlParameter(sParam) {
 
 $(document).ready(function(){
 	var lid = getUrlParameter("lid");
-	if (lid) {
+	if (lid && lid != "true") {
         localStorage.setItem("hasToken", true);
 
 		$("#settingsContainer").show();
